@@ -2,7 +2,7 @@ class Player:
 
     nb_players = 0 
     def __init__(self, name, pseudo,country):
-        self.nom = name
+        self.name = name
         self.pseudo = pseudo
         self.country = country
         Player.nb_players += 1
@@ -30,7 +30,7 @@ class Country :
 
     def add_player(self, player):
         #retriré de la liste de l'ancien pays
-        player.country.players.remove(player)
+        #player.country.players.remove(player)
         self.players.append(player)
         player.country = self
 
